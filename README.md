@@ -15,7 +15,7 @@ Hello! I am a [software developer](https://en.wikipedia.org/wiki/Software_develo
 
 ## Contact Me
 
-Feel free to reach out to me at [mugeng.du@gmail.com](mailto:mugeng.du@gmail.com) or connect with me.
+Feel free to reach out to me at [mugeng.du@gmail.com](mailto:mugeng.du@gmail.com).
 
 ------
 
