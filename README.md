@@ -24,7 +24,7 @@ Feel free to reach out to me at [mugeng.du@gmail.com](mailto:mugeng.du@gmail.com
 </a>
 
 ------
-<img align="right" alt="GIF" src="https://github.com/deut-erium/deut-erium/blob/master/assets/computer.gif?raw=1" width="150vw" />
+<img align="right" alt="GIF" src="https://github.com/deut-erium/deut-erium/blob/master/assets/computer.gif?raw=1"/>
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=bigduu&show_icons=true&theme=dark) 
   
