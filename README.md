@@ -6,7 +6,7 @@ Hello! I am a [software developer](https://en.wikipedia.org/wiki/Software_develo
 ## Skills
 
 * Rust
-* * Java
+* Java
 * Kotlin
 * Scala
 * JavaScript/Typescript
