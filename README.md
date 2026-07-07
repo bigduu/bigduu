@@ -2,6 +2,8 @@
 
 **AI Agent developer.** I build **local-first AI agents** — agents that actually *do the work*: break down tasks, call tools, stream every step live, remember what they learned, and turn repeat work into automation. All running on your machine, owned by you.
 
+Years of production engineering (JVM microservices → Rust systems) went into this stack — and these days I work *with* agents as much as *on* them: the ecosystem below is designed, built, reviewed, and shipped in tight loops with my own agents. **Bodhi helps build Bodhi.**
+
 ## 🤖 The Bodhi AI Ecosystem
 
 An end-to-end, open-source desktop AI agent I design and build from the runtime up:
@@ -21,6 +23,7 @@ An end-to-end, open-source desktop AI agent I design and build from the runtime 
 - **Transparency over magic** — every token, tool call, and decision streamed live to the UI
 - **Memory that compounds** — persistent, searchable agent memory (CJK-aware BM25 + consolidation), not goldfish sessions
 - **Real work, not chat** — task decomposition, sub-agents, schedules, workflows, and desktop control via MCP
+- **Agent-native development** — multi-agent implementation sweeps, adversarial review passes, scheduled autonomous runs: daily practice, not demos
 - **Rust where it counts** — one fast, embeddable runtime instead of a stack of glue
 
 ## 🛠 Stack
@@ -41,6 +44,4 @@ Feel free to reach out at [mugeng.du@gmail.com](mailto:mugeng.du@gmail.com).
 ------
 <img align="right" src="https://github.com/rajput2107/rajput2107/blob/master/Assets/Developer.gif"/>
 
-![bigduu's GitHub stats](https://github-readme-stats.vercel.app/api?username=bigduu&show_icons=true&theme=dark)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bigduu&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+[![bigduu's contributions](https://ghchart.rshah.org/40c463/bigduu)](https://github.com/bigduu)
