@@ -44,4 +44,9 @@ Feel free to reach out at [mugeng.du@gmail.com](mailto:mugeng.du@gmail.com).
 ------
 <img align="right" src="https://github.com/rajput2107/rajput2107/blob/master/Assets/Developer.gif"/>
 
+<!-- Self-hosted github-readme-stats (own Vercel instance + PAT: no shared rate limit). -->
+![bigduu's GitHub stats](https://github-readme-stats-bigduu.vercel.app/api?username=bigduu&show_icons=true&theme=dark)
+
+[![Top Langs](https://github-readme-stats-bigduu.vercel.app/api/top-langs/?username=bigduu&theme=dark)](https://github.com/bigduu)
+
 [![bigduu's contributions](https://ghchart.rshah.org/40c463/bigduu)](https://github.com/bigduu)
