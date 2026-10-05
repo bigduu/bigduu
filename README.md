@@ -1,44 +1,56 @@
-# Hi, I'm bigduu 👋
+<p align="center">
+  <img src="./assets/banner.jpg" alt="bigduu: Building Bodhi, a local-first AI agent workbench. A forest with a bodhi tree, bamboo, a lotus river and magpies." width="100%" />
+</p>
 
-**AI agent developer.** I build local-first agents that break down tasks, use tools, stream their work, keep useful memory, and turn repeated work into automation — on infrastructure you can run and inspect yourself.
+<p align="center">
+  <a href="https://github.com/bigduu/Zenith"><img src="https://img.shields.io/badge/Bodhi-local--first%20agent%20workbench-2ea44f?style=flat-square" alt="Bodhi" /></a>
+  <a href="https://github.com/bigduu/homebrew-tap"><img src="https://img.shields.io/badge/brew-bigduu%2Ftap-blue?style=flat-square&logo=homebrew&logoColor=white" alt="Homebrew tap" /></a>
+  <a href="mailto:mugeng.du@gmail.com"><img src="https://img.shields.io/badge/email-mugeng.du%40gmail.com-lightgrey?style=flat-square" alt="Email" /></a>
+  <a href="https://github.com/bigduu"><img src="https://komarev.com/ghpvc/?username=bigduu&style=flat-square&label=profile%20views" alt="Profile views" /></a>
+</p>
 
-Years of production engineering across JVM services and Rust systems shape this work. I now build the ecosystem below in tight implementation and review loops with the agents themselves: **Bodhi helps build Bodhi.**
+**AI agent developer** in Hangzhou. I build **[Bodhi](https://github.com/bigduu/Zenith)** — a local-first agent workbench you can watch work: every tool call is visible, risky actions ask first, and memory stays on your machine.
 
-Based in Hangzhou. Open to interesting collaborations.
+Years of JVM services and Rust systems inform the stack. I ship the suite below in tight loops with the agents themselves: **Bodhi helps build Bodhi.**
 
-## Bodhi — local-first AI agent workbench
-
-[Bodhi](https://github.com/bigduu/Zenith) is a desktop agent you can actually watch work: every tool call is visible, risky actions ask first, and memory stays on your machine.
-
-**Install on macOS (Homebrew):**
+## Quick install (macOS)
 
 ```sh
 brew tap bigduu/tap
-brew trust bigduu/tap
+brew trust bigduu/tap          # required so the cask can pull formula deps
 brew install --cask bigduu/tap/bodhi
 ```
 
-That installs the [Bodhi desktop app](https://github.com/bigduu/Bodhi-AI) and the [Jiandu](https://github.com/bigduu/Jiandu) + [Nova](https://github.com/bigduu/Nova) CLI tools. Windows / Linux / manual macOS builds: [Bodhi releases](https://github.com/bigduu/Bodhi-AI/releases/latest).
+That installs the [Bodhi desktop app](https://github.com/bigduu/Bodhi-AI) plus the [Jiandu](https://github.com/bigduu/Jiandu) and [Nova](https://github.com/bigduu/Nova) CLIs. Windows / Linux / manual macOS builds: [Bodhi releases](https://github.com/bigduu/Bodhi-AI/releases/latest).
 
-| Project | One-line value | Link |
-|---|---|---|
-| **Bodhi** | Desktop app — hand it a task, watch every step | [Bodhi-AI](https://github.com/bigduu/Bodhi-AI) |
-| **Bamboo** | Rust agent runtime: sessions, tools, skills, MCP, sub-agents, workflows | [Bamboo-agent](https://github.com/bigduu/Bamboo-agent) |
-| **Nova** `v0.3.0` | Let any MCP agent use your real Mac or Windows apps | [Nova](https://github.com/bigduu/Nova) · `brew install bigduu/tap/nova` |
-| **Jiandu** `v0.3.0` | One shared local memory for Claude Code, Codex, Cursor, and Bodhi | [Jiandu](https://github.com/bigduu/Jiandu) · `brew install bigduu/tap/jiandu` |
-| **Magpie** `v0.1.2` | Drive Bamboo from Telegram or Feishu/Lark | [Magpie](https://github.com/bigduu/Magpie) · `brew install bigduu/tap/magpie` |
-| **Zenith** | Monorepo index, roadmap, and release train for the suite | [Zenith](https://github.com/bigduu/Zenith) |
-
-CLI-only install (no desktop app):
+CLI-only (no desktop app):
 
 ```sh
 brew tap bigduu/tap
 brew install bigduu/tap/nova     # macOS
-brew install bigduu/tap/jiandu   # compiles from source tag
-brew install bigduu/tap/magpie   # macOS / Linux x86_64
+brew install bigduu/tap/jiandu   # builds from source tag (needs Rust)
+brew install bigduu/tap/magpie   # macOS / Linux x86_64 — Telegram / Feishu bridge
 ```
 
 Tap docs: [bigduu/homebrew-tap](https://github.com/bigduu/homebrew-tap).
+
+## The Bodhi suite
+
+| | Project | What it is | Get it |
+|:-:|---|---|---|
+| 🪷 | **[Bodhi](https://github.com/bigduu/Bodhi-AI)** | Desktop app — hand it a task, watch every step | `brew install --cask bigduu/tap/bodhi` |
+| 🎋 | **[Bamboo](https://github.com/bigduu/Bamboo-agent)** | Rust agent runtime: sessions, tools, skills, MCP, sub-agents, workflows | Bundled with Bodhi · [repo](https://github.com/bigduu/Bamboo-agent) |
+| 🖥️ | **[Nova](https://github.com/bigduu/Nova)** `v0.3.0` | Computer-use MCP — let any agent drive real Mac / Windows apps | `brew install bigduu/tap/nova` |
+| 🧠 | **[Jiandu](https://github.com/bigduu/Jiandu)** `v0.3.0` | Shared local filesystem memory for Claude Code, Codex, Cursor, Bodhi | `brew install bigduu/tap/jiandu` |
+| 🐦 | **[Magpie](https://github.com/bigduu/Magpie)** `v0.1.2` | Drive Bamboo from Telegram or Feishu / Lark | `brew install bigduu/tap/magpie` |
+| 🗺️ | **[Zenith](https://github.com/bigduu/Zenith)** | Monorepo index, roadmap, and release train | [Zenith](https://github.com/bigduu/Zenith) |
+
+## Now
+
+- Shipping **Bodhi** as the default way to run the suite on a Mac (`brew` cask + tap).
+- **Nova v0.3.0** and **Jiandu v0.3.0** out — computer use + shared memory for any MCP host.
+- **Magpie v0.1.2** bridges Telegram / Feishu into Bamboo sessions.
+- Tightening docs, Homebrew packaging, and release notes so "clone → brew → work" stays one path.
 
 ## What I care about in agents
 
@@ -51,25 +63,22 @@ Tap docs: [bigduu/homebrew-tap](https://github.com/bigduu/homebrew-tap).
 
 ## Stack
 
-**Daily:** Rust · TypeScript/React · Tauri · Go · MCP · HTTP/SSE/WebSocket
+**Daily:** Rust · TypeScript / React · Tauri · Go · MCP · HTTP / SSE / WebSocket
 
-**Also fluent in:** Java · Kotlin · Scala · Vue.js
+**Also:** Java · Kotlin · Scala · Vue.js
 
 ## Contact
 
-[mugeng.du@gmail.com](mailto:mugeng.du@gmail.com) · [GitHub](https://github.com/bigduu)
-
----
-
-<a href="https://github.com/bigduu">
-  <img src="https://komarev.com/ghpvc/?username=bigduu&style=flat-square" alt="Profile views" />
-</a>
+[mugeng.du@gmail.com](mailto:mugeng.du@gmail.com) · [GitHub](https://github.com/bigduu) · Open to interesting collaborations.
 
 ---
 
 <!-- Self-hosted github-readme-stats (own Vercel instance + PAT: no shared rate limit). -->
-![Bigduu's GitHub stats](https://github-readme-stats-bigduu.vercel.app/api?username=bigduu&show_icons=true&theme=dark)
+<p align="center">
+  <img src="https://github-readme-stats-bigduu.vercel.app/api?username=bigduu&show_icons=true&theme=dark&hide_border=true" alt="bigduu GitHub stats" />
+  <img src="https://github-readme-stats-bigduu.vercel.app/api/top-langs/?username=bigduu&layout=compact&theme=dark&hide_border=true" alt="Top languages" />
+</p>
 
-[![Top languages](https://github-readme-stats-bigduu.vercel.app/api/top-langs/?username=bigduu&theme=dark)](https://github.com/bigduu)
-
-[![Bigduu's contributions](https://ghchart.rshah.org/40c463/bigduu)](https://github.com/bigduu)
+<p align="center">
+  <img src="https://ghchart.rshah.org/40c463/bigduu" alt="bigduu contributions" />
+</p>
