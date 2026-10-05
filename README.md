@@ -1,41 +1,63 @@
-# Hi there 👋 I'm Bigduu
+# Hi, I'm bigduu 👋
 
-**AI agent developer.** I build local-first agents that can break down tasks, use tools, stream their work, retain useful context, and turn repeated work into automation — on infrastructure you can run and inspect yourself.
+**AI agent developer.** I build local-first agents that break down tasks, use tools, stream their work, keep useful memory, and turn repeated work into automation — on infrastructure you can run and inspect yourself.
 
 Years of production engineering across JVM services and Rust systems shape this work. I now build the ecosystem below in tight implementation and review loops with the agents themselves: **Bodhi helps build Bodhi.**
 
-## 🤖 The Bodhi AI ecosystem
+Based in Hangzhou. Open to interesting collaborations.
 
-These are the main projects I am actively developing:
+## Bodhi — local-first AI agent workbench
 
-| Project | What it is |
-|---|---|
-| 🧭 **[Jiandu](https://github.com/bigduu/Jiandu)** | Small, agent-independent, filesystem-backed memory: a Rust library plus one stdio MCP `memory` tool for Session, Project, and Global memory. |
-| 🎋 **[Bamboo-agent](https://github.com/bigduu/Bamboo-agent)** | A local-first AI agent runtime in Rust. It owns sessions, tools, skills, sub-agents, workflows, schedules, and context policy behind HTTP and streaming APIs. |
-| 🧘 **[Bodhi-AI](https://github.com/bigduu/Bodhi-AI)** | The desktop agent app: a Tauri shell around the Bamboo runtime and Lotus interface. |
-| 🪷 **[Lotus](https://github.com/bigduu/Lotus)** | The React interface for live reasoning, tool calls, tasks, projects, and agent control. **[lotus-next](https://github.com/bigduu/lotus-next)** is its mobile-first companion track. |
-| ✨ **[Nova](https://github.com/bigduu/Nova)** | A self-contained Rust MCP server for macOS screenshots, Set-of-Mark targeting, OCR, mouse, and keyboard control. |
-| 🏔 **[Zenith](https://github.com/bigduu/Zenith)** | The workspace that coordinates the repositories, architecture, roadmap, and release train. |
-| 🏯 **[Pavilion](https://github.com/bigduu/Pavilion)** | The bilingual 中文/English website and long-form product and architecture documentation. |
+[Bodhi](https://github.com/bigduu/Zenith) is a desktop agent you can actually watch work: every tool call is visible, risky actions ask first, and memory stays on your machine.
 
-## 🧠 What I care about in agents
+**Install on macOS (Homebrew):**
 
-- **Local-first and private** — your model keys, your data, and your machine; cloud services are optional.
+```sh
+brew tap bigduu/tap
+brew trust bigduu/tap
+brew install --cask bigduu/tap/bodhi
+```
+
+That installs the [Bodhi desktop app](https://github.com/bigduu/Bodhi-AI) and the [Jiandu](https://github.com/bigduu/Jiandu) + [Nova](https://github.com/bigduu/Nova) CLI tools. Windows / Linux / manual macOS builds: [Bodhi releases](https://github.com/bigduu/Bodhi-AI/releases/latest).
+
+| Project | One-line value | Link |
+|---|---|---|
+| **Bodhi** | Desktop app — hand it a task, watch every step | [Bodhi-AI](https://github.com/bigduu/Bodhi-AI) |
+| **Bamboo** | Rust agent runtime: sessions, tools, skills, MCP, sub-agents, workflows | [Bamboo-agent](https://github.com/bigduu/Bamboo-agent) |
+| **Nova** `v0.3.0` | Let any MCP agent use your real Mac or Windows apps | [Nova](https://github.com/bigduu/Nova) · `brew install bigduu/tap/nova` |
+| **Jiandu** `v0.3.0` | One shared local memory for Claude Code, Codex, Cursor, and Bodhi | [Jiandu](https://github.com/bigduu/Jiandu) · `brew install bigduu/tap/jiandu` |
+| **Magpie** `v0.1.2` | Drive Bamboo from Telegram or Feishu/Lark | [Magpie](https://github.com/bigduu/Magpie) · `brew install bigduu/tap/magpie` |
+| **Zenith** | Monorepo index, roadmap, and release train for the suite | [Zenith](https://github.com/bigduu/Zenith) |
+
+CLI-only install (no desktop app):
+
+```sh
+brew tap bigduu/tap
+brew install bigduu/tap/nova     # macOS
+brew install bigduu/tap/jiandu   # compiles from source tag
+brew install bigduu/tap/magpie   # macOS / Linux x86_64
+```
+
+Tap docs: [bigduu/homebrew-tap](https://github.com/bigduu/homebrew-tap).
+
+## What I care about in agents
+
+- **Local-first and private** — your model keys, your data, your machine; cloud is optional.
 - **Transparency over magic** — make model output, tool calls, state changes, and failures visible.
-- **Shared memory with a narrow boundary** — durable filesystem memory through a small MCP surface, with product-specific context policy kept in the agent runtime.
+- **Shared memory with a narrow boundary** — durable filesystem memory through a small MCP surface.
 - **Real work, not just chat** — task decomposition, sub-agents, schedules, workflows, and desktop control.
-- **Agent-native development** — parallel implementation, adversarial review, exact acceptance checks, and automated follow-through as daily practice.
-- **Clear implementation boundaries** — Rust for local execution and durable services; MCP where different agents need a shared interface.
+- **Agent-native development** — parallel implementation, adversarial review, exact acceptance checks.
+- **Clear boundaries** — Rust for local execution; MCP where different agents need a shared interface.
 
-## 🛠 Stack
+## Stack
 
-**Daily drivers:** Rust · TypeScript/React · Tauri · Go · MCP · HTTP/SSE/WebSocket
+**Daily:** Rust · TypeScript/React · Tauri · Go · MCP · HTTP/SSE/WebSocket
 
 **Also fluent in:** Java · Kotlin · Scala · Vue.js
 
-## 📫 Contact
+## Contact
 
-Feel free to reach out at [mugeng.du@gmail.com](mailto:mugeng.du@gmail.com).
+[mugeng.du@gmail.com](mailto:mugeng.du@gmail.com) · [GitHub](https://github.com/bigduu)
 
 ---
 
