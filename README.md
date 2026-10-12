@@ -40,15 +40,15 @@ Tap docs: [bigduu/homebrew-tap](https://github.com/bigduu/homebrew-tap).
 |:-:|---|---|---|
 | 🪷 | **[Bodhi](https://github.com/bigduu/Bodhi-AI)** | Desktop app — hand it a task, watch every step | `brew install --cask bigduu/tap/bodhi` |
 | 🎋 | **[Bamboo](https://github.com/bigduu/Bamboo-agent)** | Rust agent runtime: sessions, tools, skills, MCP, sub-agents, workflows | Bundled with Bodhi · [repo](https://github.com/bigduu/Bamboo-agent) |
-| 🖥️ | **[Nova](https://github.com/bigduu/Nova)** `v0.3.0` | Computer-use MCP — let any agent drive real Mac / Windows apps | `brew install bigduu/tap/nova` |
-| 🧠 | **[Jiandu](https://github.com/bigduu/Jiandu)** `v0.3.0` | Shared local filesystem memory for Claude Code, Codex, Cursor, Bodhi | `brew install bigduu/tap/jiandu` |
+| 🖥️ | **[Nova](https://github.com/bigduu/Nova)** `v0.3.1` | Computer-use MCP — let any agent drive real Mac / Windows apps | `brew install bigduu/tap/nova` |
+| 🧠 | **[Jiandu](https://github.com/bigduu/Jiandu)** `v0.3.2` | Shared local filesystem memory for Claude Code, Codex, Cursor, Bodhi | `brew install bigduu/tap/jiandu` |
 | 🐦 | **[Magpie](https://github.com/bigduu/Magpie)** `v0.1.2` | Drive Bamboo from Telegram or Feishu / Lark | `brew install bigduu/tap/magpie` |
 | 🗺️ | **[Zenith](https://github.com/bigduu/Zenith)** | Monorepo index, roadmap, and release train | [Zenith](https://github.com/bigduu/Zenith) |
 
 ## Now
 
 - Shipping **Bodhi** as the default way to run the suite on a Mac (`brew` cask + tap).
-- **Nova v0.3.0** and **Jiandu v0.3.0** out — computer use + shared memory for any MCP host.
+- **Nova v0.3.1** and **Jiandu v0.3.2** out — computer use + shared memory for any MCP host.
 - **Magpie v0.1.2** bridges Telegram / Feishu into Bamboo sessions.
 - Tightening docs, Homebrew packaging, and release notes so "clone → brew → work" stays one path.
 
